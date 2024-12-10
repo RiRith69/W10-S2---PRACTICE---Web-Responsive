@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.box1 {
+  background-color: aqua;
+  height: 40px;
+}
+.box2 {
+  background-color: blue;
+  height: 40px;
+}
+.box3 {
+  background-color: darkblue;
+  height: 40px;
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
